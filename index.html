@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIZEEEE PIZEEEEE</title>
+  <style>
+    /* Body and background styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    /* Container for the title and image */
+    .container {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 90%;
+      max-width: 380px; /* Ensures it fits well on iPhone 13 Pro screen */
+    }
+
+    /* Title styling */
+    h1 {
+      font-size: 2em;
+      color: #030603;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    /* Image styling */
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Hover effect for the image */
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer styling */
+    .footer {
+      font-size: 1.1em;
+      color: #888;
+      margin-top: 20px;
+    }
+
+    /* Media query for iPhone 13 Pro - Portrait */
+    @media only screen and (max-width: 390px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.8em; /* Slightly smaller title for better fitting */
+      }
+
+      .footer {
+        font-size: 1em; /* Adjust footer size */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>ŞIMDIII MIZEEEE ≽^•⩊•^≼</h1>
+    <img id="catImage" src="" alt="Your cat of the day">
+    <div class="footer">Enjoy your daily dose of cuteness! VEE AGRESIFFLEESHHHH!! TAMAMMMM MIIII??</div>
+
+  </div>
+
+  <script>
+    // Array of image file names
+    const catImages = [
+      "cat1.jpg",
+      "cat2.jpg",
+      "cat3.jpg",
+      "cat4.jpg",
+      "cat5.jpg",
+      "cat6.jpg",
+      "cat7.jpg",
+      "cat8.jpg",
+      "cat9.jpg",
+      "cat10.jpg",
+      "cat11.jpg",
+      "cat12.jpg",
+      "cat13.jpg",
+      "cat14.jpg",
+      "cat15.jpg",
+      "cat16.jpg",
+      "cat17.jpg",
+      "cat18.jpg",
+      "cat19.jpg",
+      "cat20.jpg",
+      "cat21.jpg",
+      "cat22.jpg",
+      "cat23.jpg",
+      "cat24.jpg",
+      "cat25.jpg",
+      "cat26.jpg",
+      "cat27.jpg",
+      "cat28.jpg",
+      "cat29.jpg",
+      "cat30.jpg",
+      "cat31.jpg",
+      "cat32.jpg",
+      "cat33.jpg",
+      "cat34.jpg",
+      "cat35.jpg",
+      "cat36.jpg"
+
+    ];
+
+    // Generate a random index
+    const index = Math.floor(Math.random() * catImages.length);
+
+    // Set the image
+    document.getElementById("catImage").src = "images/" + catImages[index];
+  </script>
+</body>
+</html>
